@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Пошуковий рядок */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    max-width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button i {
+    font-size: 18px;
+    color: #606060;
+}
+
+/* Загальний контейнер */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Ліва бокова панель */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .block {
+    margin-bottom: 20px;
+}
+
+.sidebar .block h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.sidebar ul li:hover {
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Основний контент */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+
+/* Верхнє меню з кнопками */
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    overflow-x: auto;
+}
+
+.top-menu button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.top-menu button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Відео-сітка */
+.videos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.video-item {
+    width: calc(25% - 10px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-item h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.video-info {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+
+/* Стиль для підписок в боковій панелі */
+.subscriptions ul li {
+    display: flex;
+    align-items: center;
+}
+
+.subscriptions ul li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Іконка YouTube Premium */
+.premium-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.premium-logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.premium-logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Кнопка для показу ще 24 */
+.show-more {
+    margin-top: 10px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    text-align: center;
+}
